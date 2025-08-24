@@ -1,0 +1,71 @@
+.degrade {
+    display: inline-block;
+    background: linear-gradient(to left, rgb(13, 207, 97), rgb(88, 88, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4em;
+    font-family: 'calibri', sans-serif;
+}
+
+h1 {
+    margin-top: 0.5em;
+}
+
+body {
+    background-color: #ECF0FB;
+    text-align: center;
+}
+
+/* Styles pour la barre de navigation */
+
+nav {
+    background-color: #ffffffb9;
+    top: 0;
+    left: auto;
+    position: sticky;
+    display: flex;
+}
+
+nav ul {
+    padding: 30px 0;
+    overflow: hidden;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: black
+}
+
+p {
+    margin: 20px auto;
+    font-size: 1.2em;
+    color: #6e6e6e;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.sommaire {
+    display: flex;
+    justify-content: center; /* centre les blocs */
+    gap: 60px;               /* espace fixe entre chaque bloc */
+    margin-top: 100px;
+}
+
+.bloc {
+    flex: 0 0 250px;  /* largeur fixe et identique */
+    text-align: center;
+}
+
+.bloc p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+    padding: 0 10px;
+}
