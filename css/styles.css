@@ -1,43 +1,15 @@
-.degrade {
-    display: inline-block;
-    background: linear-gradient(to left, rgb(13, 207, 97), rgb(88, 88, 255));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 4em;
-    font-family: 'calibri', sans-serif;
+body {
+    background-color: #ECF0FB;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
 h1 {
     margin-top: 0.5em;
 }
 
-body {
-    background-color: #ECF0FB;
-    text-align: center;
-}
-
-/* Styles pour la barre de navigation */
-
-nav {
-    background-color: #ffffffb9;
-    top: 0;
-    left: auto;
-    position: sticky;
-    display: flex;
-    align-items: center; /* centre verticalement */
-    justify-content: space-between; /* espace entre logo et liens */
-    padding: 0 40px; /* espace horizontal */
-}
-
-nav ul {
-    padding: 30px 0;
-    overflow: hidden;
-    display: flex;
-    gap: 30px;
-}
-
-nav ul li a {
-    color: black
+h2 {
+    color: #333;
 }
 
 p {
@@ -45,19 +17,65 @@ p {
     font-size: 1.2em;
     color: #6e6e6e;
     line-height: 1.6;
-    font-family: 'Arial', sans-serif;
     padding: 0 20px;
 }
 
-h2 {
-    color: #333;
-    font-family: 'Arial', sans-serif;
+/* ----------- Effet Dégradé sur le titre ----------- */
+.degrade {
+    display: inline-block;
+    background: linear-gradient(to left, rgb(13, 207, 97), rgb(88, 88, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4em;
+    font-family: 'Calibri', sans-serif;
 }
 
+/* ----------- Barre de Navigation ----------- */
+nav {
+    background-color: #ffffffb9;
+    position: sticky;
+    top: 0;
+    left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Centrage des éléments du menu */
+.Menu-centre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ----------- Logo ----------- */
+.logo img {
+    border-radius: 30%;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ----------- Sommaire ----------- */
 .sommaire {
     display: flex;
-    justify-content: center; /* centre les blocs */
-    gap: 60px;               /* espace fixe entre chaque bloc */
+    justify-content: center;
+    gap: 60px;
     margin-top: 100px;
 }
 
@@ -66,7 +84,7 @@ h2 {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centre horizontalement le contenu */
+    align-items: center;
 }
 
 .bloc p {
@@ -76,16 +94,12 @@ h2 {
     padding: 0 10px;
 }
 
-.logo {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    border-radius: 5%;
-}
-
+/* ----------- Icônes ----------- */
 .icone {
     height: 70px;
     margin-bottom: 20px;
     border-radius: 30%;
+    margin: 0 auto;
+    display: block;
 }
 
