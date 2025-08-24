@@ -24,6 +24,9 @@ nav {
     left: auto;
     position: sticky;
     display: flex;
+    align-items: center; /* centre verticalement */
+    justify-content: space-between; /* espace entre logo et liens */
+    padding: 0 40px; /* espace horizontal */
 }
 
 nav ul {
@@ -68,4 +71,11 @@ h2 {
     color: #555;
     line-height: 1.4;
     padding: 0 10px;
+}
+
+.logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 30%;
 }
