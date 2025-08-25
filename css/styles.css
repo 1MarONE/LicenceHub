@@ -127,3 +127,95 @@ nav ul li a {
     font-size: 2.5em;
 }
 
+/* Grille des cartes */
+.cards-container {
+    width: min(1200px, calc(100vw - 240px - 80px)); /* -80px = marge “coussin” */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 100px;
+}
+
+/* Carte avec image à droite */
+.card {
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.384); /* fond semi-transparent */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+    height: 220px;
+    padding: 24px;
+}
+
+.card__content {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  padding-right: clamp(120px, 20%, 220px);
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-family: "system-ui";
+  color: #000000;
+  font-size: 26px;
+}
+
+.card p {
+  margin: 0 0 18px;
+  padding: 10px 0;
+  line-height: 1.5;
+  color: #6c717f;
+  font-size: 15px;
+  max-width: 100ch;      /* limite la largeur à environ 38 caractères */
+   /* centre horizontalement */
+  text-align: center;   /* garde le texte centré */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;   /* un peu plus large qu’avant */
+    min-width: 200px;     /* largeur minimale du bouton */
+    border-radius: 5px;
+    background: #ebebeb;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    transition: transform .1s, background .2s;
+}
+
+.btn:hover { 
+    background:#92f0ff;
+    transform: translateY(-1px); 
+}
+
+/* Image collée à droite */
+.card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90px;        /* taille réduite */
+  height: 90px;       /* taille réduite */
+  object-fit: contain; 
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Hover léger */
+.card:hover { transform: translateY(-3px); transition: transform .2s; }
+
+.footer {
+    margin-top: auto;
+    background: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+  .card__content { padding-right: 24px; }
+  .card__image { width: 70px; height: 70px; top: 0; right: 0; }
+}
